@@ -1,4 +1,4 @@
-package org.watering.resource;
+package org.homegarden.api;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -19,4 +19,5 @@ public interface RelayResource {
     @Path("/stop/{id}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response stop(@PathParam("id") int id);
+
 }
